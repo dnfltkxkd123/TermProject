@@ -1,0 +1,21 @@
+
+        .msg_text{
+            width:100%;
+        }
+        
+        .box{
+        	
+            border-bottom:solid 1.3px #e5e5e5;
+        }
+        .name{
+        	width:150px;
+
+        }
+        .test{
+        	border:none;
+        }
+        .textBox{
+        	border:none;
+        	width:100%;
+        }
+

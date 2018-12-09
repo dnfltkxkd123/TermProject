@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	
+    <script>
+	    $(function (){
+        	// 파일 드롭 다운
+       	 	fileDropDown();
+    	});
+	 // 파일 드롭 다운
+	    function fileDropDown(){
+	        var dropZone = $("#dropZone");
+	        //Drag기능 
+	        dropZone.on('dragenter',function(e){
+	            e.stopPropagation();
+	            e.preventDefault();
+	            // 드롭다운 영역 css
+	            dropZone.css('background-color','#E3F2FC');
+	        });
+	        dropZone.on('dragleave',function(e){
+	            e.stopPropagation();
+	            e.preventDefault();
+	            // 드롭다운 영역 css
+	            dropZone.css('background-color','#FFFFFF');
+	        });
+	        dropZone.on('dragover',function(e){
+	            e.stopPropagation();
+	            e.preventDefault();
+	            // 드롭다운 영역 css
+	            dropZone.css('background-color','#E3F2FC');
+	        });
+	        dropZone.on('drop',function(e){
+	            e.preventDefault();
+	            // 드롭다운 영역 css
+	            dropZone.css('background-color','#FFFFFF');
+	            
+	            var files = e.originalEvent.dataTransfer.files;
+	            if(files != null){
+	                if(files.length < 1){
+	                    alert("폴더 업로드 불가");
+	                    return;
+	           		}
+					$("#File")
+	        		.prop("files", files) 
+	          		.submit(); 
+	          		document.getElementById('p').innerHTML = files[0].name;
+	            }else{
+	                alert("ERROR");
+	            }
+	        });
+	    }
+    </script>
+	<form action="test.php"  method="post" enctype="multipart/form-data">
+		<input type="file" id="File" name="files" style="display: none">
+   		<table class="table" width="100%" border="1px">
+            <tbody id="fileTableTbody">
+                <tr>
+                    <td id="dropZone">
+                        파일을 드래그 하세요
+                    </td>
+                </tr>
+            </tbody>
+    	</table>
+    	<input type="submit">
+	</form>
+	<p id="p"></p>
+</body>
+</html>

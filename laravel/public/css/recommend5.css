@@ -1,0 +1,70 @@
+body{
+            
+        }
+        .editor p{
+            font-size:0.8em
+        }
+        ul{
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            margin:0 auto;
+            max-width:1080px;
+            
+            margin-top:50px;
+        }
+        .l-col{
+            margin-bottom:20px;
+            width:100%;
+            padding:10px;
+        }
+        .editor{
+            
+            
+            min-height:270px;
+        }
+        .thema{
+            width:100%;
+            border-top:solid 3px #088A68;
+            margin-bottom:10px;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,f9f9f9+38,d8d8d8+99,6d6d6d+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(249,249,249,1) 38%, rgba(216,216,216,1) 99%, rgba(109,109,109,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(249,249,249,1) 38%,rgba(216,216,216,1) 99%,rgba(109,109,109,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 1%,rgba(249,249,249,1) 38%,rgba(216,216,216,1) 99%,rgba(109,109,109,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#6d6d6d',GradientType=0 ); /* IE6-9 */
+        }
+        .thema span{
+            color:#088A68;
+            display:block;
+            padding:10px;
+            font-size:0.8em;
+            font-weight: bold;
+            position:relative;
+            left:10px;
+        }
+        .glyphicon{
+            padding:3px;
+        }
+        .editor-icon{
+            float:left;
+        }
+        .editor-text{
+            margin-left:158px;
+            overflow:auto;
+        }
+        .editor-text{
+            
+        }
+        .text-box{
+           
+        }
+        @media (max-width:685px){
+          .l-col{
+            width:100%;
+          }
+        }

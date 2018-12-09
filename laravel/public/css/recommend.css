@@ -1,0 +1,91 @@
+        body{
+            background: #333;
+            color:#999;
+        }
+        body,ul{
+            margin:0;
+            padding:0;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        li{
+            list-style:none;
+        }
+        
+        html{
+            font-size:64.5%;
+        }
+        
+        
+        .l-row:after{/*컨테이너 요소안 맨 마지막에 추가시킬 태그 지정*/
+            content:' ';
+            display: table;
+            clear: both;/*float속성을 설정한 태그를 따라가지 않게 함*/
+        }
+        
+        .l-row{
+            margin:0 -10px;
+        }
+        
+        
+        .l-col{
+            float:left;
+            width:25%;
+            padding:0 10px;
+            box-sizing: border-box;/*높이 너비 계산시 content,padding,border를 포함*/
+        }
+        
+        .l-wrapper{
+            max-width:1140px;
+            padding: 20px;
+            margin:0 auto;
+        }
+        
+        .editor{
+            background-color:#111;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top:70px;
+            border-radius: 10px;
+        }
+        
+        
+        .editor p {
+            padding:10px 0;
+            color:#666;
+            position:relative;
+        }
+        
+        
+        .editor-icon{
+            transition: 500ms;
+            transform:scale(0.8);
+        }
+        
+        
+        
+        
+        
+        @media (max-width:768px){
+            .l-col{
+                width:50%;
+            }
+        }
+        
+        @media (max-width:400px){
+            .l-col{
+                width:100%;
+            }
+            
+            .editor p{
+                height:auto;
+            }
+        }
+        
+        @media (min-width:1140px){
+            .l-col{
+                width:20%;
+            }
+        }

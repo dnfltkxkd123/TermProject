@@ -1,0 +1,27 @@
+.container{
+	width:680px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.login{height:70px;}
+
+.left{text-align:left;}
+
+.right{text-align:right;}
+
+th{background-color:cyan;}
+
+.list{width:680px;}
+.list-num{width:80px;}
+.list-writer{width:230px;}
+.list-title{width:230px;}
+.list-regtime{width:180px;}
+
+.msg{width:680px;}
+.msg-header{width:100px;}
+.msg-text{width:580px;}
+
+a:link{text-decoration: :none; color:blue;}
+a:visited{text-decoration: none; color:blue;}
+a:hover{text-decoration: none;color:red;}
